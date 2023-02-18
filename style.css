@@ -1025,6 +1025,7 @@ section {
     #portfolio {
         background-color: #FDB45C;
         padding: 3em 4em;
+        margin-bottom: 5em; /* Add a margin to push #contact down */
     }
 
     #portfolio h2 {
