@@ -1056,9 +1056,13 @@ section {
     }
 
     #contact {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 3em 4em;
-    }
+      }
+      
 
     #contact h2 {
         margin: 2% auto;
@@ -1078,7 +1082,6 @@ section {
     }
 
     #footer-wrapper {
-        position: absolute;
         right: 0;
         bottom: 9%;
         left: 0;
@@ -1086,6 +1089,7 @@ section {
         background-color: #1f2c38;
         color: white;
         text-align: center;
+        margin-top: auto;
     }
 
 }
