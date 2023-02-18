@@ -690,29 +690,31 @@ section {
     overflow: hidden;
     height: 40px;
     padding: 0 40px;
-
-    &:before {
-        content: '[';
-        left: 0;
-        line-height: 40px;
-    }
-
-    &:after {
-        content: ']';
-        position: absolute;
-        right: 0;
-        line-height: 40px;
-    }
-
-    &:after,
-    &:before {
-        position: absolute;
-        top: 0;
-        color: #16a085;
-        font-size: 42px;
-        animation: 2s linear 0s normal none infinite opacity;
-    }
+    position: relative;
 }
+
+.visible:before {
+    content: '[';
+    left: 0;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    animation: 2s linear 0s normal none infinite opacity;
+}
+
+.visible:after {
+    content: ']';
+    position: absolute;
+    right: 0;
+    line-height: 40px;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    animation: 2s linear 0s normal none infinite opacity;
+}
+
 
 .visible p {
     display: inline;
