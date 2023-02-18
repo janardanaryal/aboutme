@@ -21,7 +21,7 @@ hr {
 
 
 p {
-    text-transformation: none;
+    text-transform: none;
 }
 
 /*text*/
@@ -437,9 +437,9 @@ blockquote p {
     font-size: 15px;
 }
 
-#number1 #number2,
+#number1,#number2,
 #number3,
-#number4,
+#number4
 {
 text-align: center !important;
 }
