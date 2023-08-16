@@ -20,7 +20,7 @@
 * Utility function to update the button text and aria-label.
 */
 function updateButton({ buttonEl, isDark }) {
-    const newCta = isDark ? "दिवाकालिन थिममा जानुहोस्" : "रात्रिककालिन थिममा जानुहोस् ";
+    const newCta = isDark ? "दिवाकालिन थिममा जानुहोस्" : "रात्रिकालिन थिममा जानुहोस् ";
     // use an aria-label if you are omitting text on the button
     // and using a sun/moon icon, for example
     buttonEl.setAttribute("aria-label", newCta);
