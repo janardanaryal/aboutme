@@ -27,7 +27,7 @@
 </head>
 
 <body>
-     <section class="section content-editor special-featured-news col-md-12 mt-30 mb-30">
+    <section class="section content-editor special-featured-news col-md-12 mt-30 mb-30">
         <div class="custom-container">
             <div class="row sif-images">
                 <div class="featured-images col-md-12 unicode-box">
@@ -35,17 +35,17 @@
                         <li class="nav-item active">
                             <a class="nav-link active" id="preeti-tab" data-toggle="tab" href="#preeti" role="tab"
                                 aria-controls="preeti" aria-selected="true">प्रीतिबाट युनिकोड</a>
-                            <br />
+                                <br />
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="roman-tab" data-toggle="tab" href="#roman" role="tab"
                                 aria-controls="roman" aria-selected="false" data-theme>रोमनाइज्ड नेपाली </a>
-                            <br />
+                                <br />
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="unicode-tab" data-toggle="tab" href="#unicode" role="tab"
                                 aria-controls="preeti" aria-selected="false" data-theme>युनिकोडबाट प्रीति</a>
-                            <br />
+                                <br />
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -63,18 +63,16 @@
                                         <label>युनिकोड</label>
                                         <textarea id="unicodeTextArea" name="ConvertedText" autocomplete="off"
                                             class="textfield form-control textarea" rows="6"></textarea>
-                                        <input type="button" class="buttton" id="copy-button-preeti" value="Copy-Text"
-                                            style="margin-top: 1rem; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <div class="tab-pane fade" id="roman" role="tabpanel" aria-labelledby="roman-tab">
-    
+
                             <form class="unicode-form">
                                 <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label>रोमन नेपालीमा लेख्नुहोसः उदाहरण 👉 mero =
+                                        <label>रोमन नेपालीमा लेख्नुहोसः उदाहरण -> mero =
                                             मेरो</label>
                                         <textarea id="roman-unicode" name="roman-type"
                                             class="textfield textarea form-control" placeholder="यहाँ टाइप गर्नुहोस्"
@@ -84,34 +82,31 @@
                                         <label>नेपाली</label>
                                         <textarea id="roman-output" name="roman-type" autocomplete="off" readonly
                                             class="textfield textarea form-control" rows="6"></textarea>
-                                        <input type="button" class="buttton" id="copy-button‍-roman" value="Copy-Text"
-                                            style="margin-top: 1rem; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">
                                     </div>
                                 </div>
                             </form>
-    
+
                         </div>
                         <div class="tab-pane fade" id="unicode" role="tabpanel" aria-labelledby="unicode-tab">
-    
+
                             <form class="unicode-form" name="form">
                                 <div class="row form-group">
                                     <div class="col-md-6">
                                         <label>युनिकोडमा लेख्नुहोस</label>
                                         <textarea id="unicodeTextArea2" name="unicode"
                                             class="textfield form-control textarea" placeholder="यहाँ टाइप गर्नुहोस्"
-                                            rows="6" onkeyup="javascript:preetiConverter();" autocomplete="off"></textarea>
+                                            rows="6" onkeyup="javascript:preetiConverter();"
+                                            autocomplete="off"></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label>प्रीति</label>
                                         <textarea id="preetiTextArea2" rows="6" name="ConvertedText" autocomplete="off"
-                                            class="textfield textarea form-control" style="font-family: preeti;"></textarea>
-                                        <input type="button" id="copy-button-unicode" value="Copy-Text"
-                                            style="margin-top: 1rem; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">
-    
+                                            class="textfield textarea form-control"
+                                            style="font-family: preeti;"></textarea>
                                     </div>
                                 </div>
                             </form>
-    
+
                         </div>
                     </div>
                 </div>
@@ -120,6 +115,8 @@
     </section>
     <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme (or icon
         here)</button>
+
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
@@ -169,7 +166,7 @@
             convertToRoman(e);
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@2.5.1/assets/js/copy-to-clipboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@2.5.0/assets/js/copy-to-clipboard.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@2.0.2/assets/js/toggle-dark-light.js"></script>
 </body>
 </html>
