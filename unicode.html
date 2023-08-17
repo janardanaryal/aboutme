@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body style="visibility: hidden;">
     <section class="section content-editor special-featured-news col-md-12 mt-30 mb-30">
         <div class="custom-container">
             <div class="row sif-images">
@@ -175,5 +175,17 @@
     </script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/copy-to-clipboard.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/toggle-dark-light.js"></script>
+    <script defer>
+        let domReady = (cb) => {
+            document.readyState === 'interactive' || document.readyState === 'complete'
+                ? cb()
+                : document.addEventListener('DOMContentLoaded', cb);
+        };
+
+        domReady(() => {
+            // Display body when DOM is loaded
+            document.body.style.visibility = 'visible';
+        });
+    </script>
 </body>
 </html>
