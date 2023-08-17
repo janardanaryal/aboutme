@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,8 +13,10 @@
     <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!--favicon request-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" 
-        integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"
+        integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -21,10 +24,9 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.0/assets/css/default.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1/assets/css/default.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1/assets/css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.0/assets/css/theme.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1/assets/css/theme.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,17 +38,17 @@
                         <li class="nav-item active">
                             <a class="nav-link active" id="preeti-tab" data-toggle="tab" href="#preeti" role="tab"
                                 aria-controls="preeti" aria-selected="true">प्रीतिबाट युनिकोड</a>
-                                <br />
+                            <br />
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="roman-tab" data-toggle="tab" href="#roman" role="tab"
                                 aria-controls="roman" aria-selected="false" data-theme>रोमनाइज्ड नेपाली </a>
-                                <br />
+                            <br />
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="unicode-tab" data-toggle="tab" href="#unicode" role="tab"
                                 aria-controls="preeti" aria-selected="false" data-theme>युनिकोडबाट प्रीति</a>
-                                <br />
+                            <br />
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -75,7 +77,7 @@
                             <form class="unicode-form">
                                 <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label>रोमन नेपालीमा लेख्नुहोसः उदाहरण -> mero =
+                                        <label>रोमन नेपालीमा लेख्नुहोसः उदाहरण 👉 mero =
                                             मेरो</label>
                                         <textarea id="roman-unicode" name="roman-type"
                                             class="textfield textarea form-control" placeholder="यहाँ टाइप गर्नुहोस्"
@@ -105,11 +107,12 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label>प्रीति</label>
-                                        <textarea id="preetiTextArea2" rows="6" name="ConvertedText" autocomplete="off"
+                                        <textarea id="preetiTextArea2" name="ConvertedText"
                                             class="textfield textarea form-control"
-                                            style="font-family: preeti;"></textarea>
+                                            autocomplete="off" style="font-family: preeti;" rows="6"></textarea>
                                         <input type="button" id="copy-button-preeti" value="Copy-Text"
                                             style="margin-top: 1rem; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">
+
                                     </div>
                                 </div>
                             </form>
@@ -122,18 +125,18 @@
     </section>
     <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme (or icon
         here)</button>
-
-
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" 
-        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" 
-        integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"
+        integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(document).ready(() => {
 
@@ -155,9 +158,9 @@
             $('#nav-middle .dropdown').removeClass('active');
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.0/assets/js/roman.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.0/assets/js/preeti_to_unicode.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.0/assets/js/unicode_to_preeti.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1/assets/js/roman.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1/assets/js/preeti_to_unicode.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1/assets/js/unicode_to_preeti.js"></script>
     <script>
         function convertToRoman(e) {
             var value = $('#roman-unicode').val();
@@ -173,7 +176,8 @@
             convertToRoman(e);
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.0/assets/js/copy-to-clipboard.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.0/assets/js/toggle-dark-light.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1//assets/js/copy-to-clipboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@3.0.1/assets/js/toggle-dark-light.js"></script>
 </body>
+
 </html>
