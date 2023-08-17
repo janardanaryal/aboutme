@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     // Attach event listeners for each button
+    copyTextToClipboard('copy-button-unicode', 'unicodeTextArea');
     copyTextToClipboard('copy-button‍-roman', 'roman-output');
-    copyTextToClipboard('copy-button-preeti', 'unicodeTextArea');
-    copyTextToClipboard('copy-button-unicode', 'preetiTextArea2');
+    copyTextToClipboard('copy-button-preeti', 'preetiTextArea2');
 });
