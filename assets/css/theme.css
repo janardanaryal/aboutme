@@ -43,14 +43,23 @@
     width: 100%;
 }
 
-button {
+#theme {
+   position: relative;
+   margin-top: -45%;
+   margin-right: -20%;
+}
+
+#theme #theme-button {
    font-size: 1.5rem;
    font-weight: bold;
    padding: 0.5rem 1rem;
    transition: all var(--global-transition-time) ease-in-out;
-   border-radius: 2rem;
+   border-radius: 1rem;
    cursor: pointer;
    color: var(--color-fg);
    background-color: var(--color-bg);
    border: 0.25rem solid var(--color-fg);
- }
+   position: absolute;
+   top: 0px;
+   right: 0px;
+}

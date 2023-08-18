@@ -61,6 +61,7 @@
 
         .section.content-editor {
             margin: 1rem 0;
+            margin-top: -50%;
         }
 
         .dark-mode {
