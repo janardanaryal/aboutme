@@ -114,6 +114,19 @@
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/unicode_to_preeti.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.9/assets/js/copy-to-clipboard.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.3/assets/js/toggle-dark-light.js" defer></script>
+   <script defer>
+    function convertToRoman() {
+        var value = $('#roman-unicode').val().trim().toLowerCase();
+        input(value);
+    }
+    $("#roman-unicode").on('input', convertToRoman);
+
+    $('#roman-convert').on('click', function (e) {
+        e.preventDefault();
+        convertToRoman();
+    });
+</script>
+
     <script defer>
         document.addEventListener('DOMContentLoaded', function () {
             document.body.style.visibility = 'visible'; // Display body when DOM is loaded
