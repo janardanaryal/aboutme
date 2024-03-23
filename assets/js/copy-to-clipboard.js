@@ -3,7 +3,7 @@ $(document).ready(function() {
     function selectText(tabId, baseId) {
         const tab = document.getElementById(tabId);
         if (tab) {
-            const textareaId = baseId + "-" + tab.getAttribute("aria-controls");
+            const textareaId = baseId;
             const textarea = document.getElementById(textareaId);
             if (textarea) {
                 textarea.focus();
