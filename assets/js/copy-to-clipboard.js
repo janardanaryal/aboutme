@@ -30,7 +30,7 @@ $(document).ready(function() {
                 textarea.focus();
                 
                 // Call the selectText function to focus and select text
-                selectText(element);
+                selectText(tempTextarea);
 
                 console.log('Text copied to clipboard.');
             } catch (err) {
