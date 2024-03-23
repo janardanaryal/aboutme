@@ -109,23 +109,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/roman.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/roman.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/preeti_to_unicode.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/unicode_to_preeti.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.9/assets/js/copy-to-clipboard.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.3/assets/js/toggle-dark-light.js" defer></script>
-   <script defer>
-    function convertToRoman() {
-        var value = $('#roman-unicode').val().trim().toLowerCase();
-        input(value);
-    }
-    $("#roman-unicode").on('input', convertToRoman);
+    <script>
+        function convertToRoman(e) {
+            var value = $('#roman-unicode').val();
+            input(value.trim().toLowerCase());
+        }
+        $("#roman-unicode").keyup(function (e) {
+            convertToRoman(e);
+        });
 
-    $('#roman-convert').on('click', function (e) {
-        e.preventDefault();
-        convertToRoman();
-    });
-</script>
+        $('#roman-convert').on('click', function (e) {
+            e.preventDefault();
+            convertToRoman(e);
+        });
+    </script>
 
     <script defer>
         document.addEventListener('DOMContentLoaded', function () {
