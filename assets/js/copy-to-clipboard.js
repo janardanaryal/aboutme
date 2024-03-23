@@ -1,31 +1,33 @@
 $(document).ready(function() {
+    // Function to copy text to clipboard
     function copyTextToClipboard(buttonId, outputId) {
         var copyButton = $('#' + buttonId);
 
         copyButton.on('click', function () {
-            // Get the textarea element by its ID
             var textarea = $('#' + outputId);
 
-            // Check if the textarea has content
+            // Check if textarea has content
             if ($.trim(textarea.val()) === '') {
                 console.log('Textarea is empty. Nothing to copy.');
-                return; // Exit the function
+                return;
             }
 
             try {
-                // Create a temporary textarea element
                 var tempTextarea = document.createElement('textarea');
                 tempTextarea.value = textarea.val();
                 document.body.appendChild(tempTextarea);
 
-                // Select the text inside the temporary textarea
+                // Select text inside temporary textarea
                 tempTextarea.select();
 
-                // Use the Clipboard API to copy the text
+                // Use Clipboard API to copy text
                 document.execCommand('copy');
 
-                // Remove the temporary textarea from the DOM
+                // Remove temporary textarea from DOM
                 document.body.removeChild(tempTextarea);
+
+                // Focus on the original textarea to visibly show the selection
+                textarea.focus();
 
                 console.log('Text copied to clipboard.');
             } catch (err) {
