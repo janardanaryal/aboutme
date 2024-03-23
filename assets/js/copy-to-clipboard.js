@@ -17,8 +17,8 @@ $(document).ready(function() {
                 tempTextarea.value = textarea.val();
                 document.body.appendChild(tempTextarea);
 
-                // Select text inside temporary textarea
-                tempTextarea.select();
+                // Call the selectText function to focus and select text
+                selectText(tempTextarea);
 
                 // Use Clipboard API to copy text
                 document.execCommand('copy');
@@ -34,6 +34,12 @@ $(document).ready(function() {
                 console.error('Unable to copy text to clipboard: ' + err);
             }
         });
+    }
+
+    // Function to focus and select text in an input element
+    function selectText(element) {
+        element.focus();
+        element.select();
     }
 
     // Attach event listeners for each button
