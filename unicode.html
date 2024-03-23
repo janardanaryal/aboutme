@@ -20,9 +20,92 @@
 <body style="visibility: hidden;">
     <div id="theme">
         <button id="theme-button" type="button" data-theme-toggle aria-label="Change to light theme" class="d-flex align-items-center justify-content-center">Change to light theme (or icon here)</button>
-    </div>
-    <section class="section content-editor special-featured-news col-md-12 mt-30 mb-30">
-        <!-- content -->
+    </div>       
+    <div id="theme">
+       <button id="theme-button" type="button" data-theme-toggle aria-label="Change to light theme"
+            class="d-flex align-items-center justify-content-center">Change to light theme (or iconhere)
+       </button>
+      </div>
+      <section class="section content-editor special-featured-news col-md-12 mt-30 mb-30">
+         <div class="converter-btn col-sm-12 col-md-12 h-100 d-flex align-items-center justify-content-center">
+            <span class="special-cats-box"><span>स्पेशल क्यारेक्टर्स:</span><span>
+            र्‍य र्‍ ऋ ॠ ङ ञ क्ष ज्ञ ॐ ण ।</span></span>
+         </div>
+         <div class="custom-container">
+            <div class="row sif-images">
+               <div class="featured-images col-md-12 unicode-box">
+                  <ul class="nav nav-tabs converter-tab" id="myTab" role="tablist">
+                     <li class="nav-item">
+                        <a class="nav-link active" id="preeti-tab" data-toggle="tab" href="#preeti" role="tab"
+                           aria-controls="preeti" aria-selected="true">प्रीतिबाट युनिकोड</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" id="roman-tab" data-toggle="tab" href="#roman" role="tab"
+                           aria-controls="roman" aria-selected="false" data-theme>रोमनाइज्ड नेपाली</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" id="unicode-tab" data-toggle="tab" href="#unicode" role="tab"
+                           aria-controls="preeti" aria-selected="false" data-theme>युनिकोडबाट प्रीति</a>
+                     </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                     <div class="tab-pane fade show active" id="preeti" role="tabpanel"
+                        aria-labelledby="preeti-tab">
+                        <form class="unicode-form" name="form">
+                           <div class="row form-group">
+                              <div class="col-md-6">
+                                 <label>प्रीतिमा लेख्नुहोस:</label>
+                                 <textarea id="preetiTextArea" name="TextToConvert"
+                                    class="textfield form-control textarea" placeholder="यहाँ टाइप गर्नुहोस्"
+                                    autocomplete="off" style="font-family: preeti;" rows="6"
+                                    onkeyup="javascript:unicodeConverter();"></textarea>
+                              </div>
+                              <div class="col-md-6">
+                                 <label>युनिकोड</label>
+                                 <textarea id="unicodeTextArea" name="ConvertedText" autocomplete="off"
+                                    class="textfield form-control textarea" rows="6"></textarea>
+                                 <button type="button" class="btn btn-success" id="copy-button-unicode">Copy
+                                 Text</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <!-- other tab panes -->
+                     <!-- other tab panes -->
+                     <div class="tab-pane fade" id="roman" role="tabpanel" aria-labelledby="roman-tab">
+                        <form class="unicode-form">
+                           <div class="row form-group">
+                              <div class="col-md-6">
+                                 <label>रोमन नेपालीमा लेख्नुहोसः उदाहरण 👉 mero = मेरो</label>
+                                 <textarea id="roman-unicode" name="roman-type" class="textfield textarea form-control" placeholder="यहाँ टाइप गर्नुहोस्" rows="6" autocomplete="off"></textarea>
+                              </div>
+                              <div class="col-md-6">
+                                 <label>नेपाली</label>
+                                 <textarea id="roman-output" name="roman-type" autocomplete="off" readonly class="textfield textarea form-control" rows="6"></textarea>
+                                 <input type="button" class="buttton" id="copy-button-roman" value="Copy-Text" style="margin-top: 1rem; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="tab-pane fade" id="unicode" role="tabpanel" aria-labelledby="unicode-tab">
+                        <form class="unicode-form" name="form">
+                           <div class="row form-group">
+                              <div class="col-md-6">
+                                 <label>युनिकोडमा लेख्नुहोस</label>
+                                 <textarea id="unicodeTextArea2" name="unicode" class="textfield form-control textarea" placeholder="यहाँ टाइप गर्नुहोस्" rows="6" onkeyup="javascript:preetiConverter();" autocomplete="off"></textarea>
+                              </div>
+                              <div class="col-md-6">
+                                 <label>प्रीति</label>
+                                 <textarea id="preetiTextArea2" name="ConvertedText" class="textfield textarea form-control" autocomplete="off" style="font-family: preeti;" rows="6"></textarea>
+                                 <input type="button" id="copy-button-preeti" value="Copy-Text" style="margin-top: 1rem; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" defer></script>
