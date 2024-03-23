@@ -28,6 +28,9 @@ $(document).ready(function() {
 
                 // Focus on the original textarea to visibly show the selection
                 textarea.focus();
+                
+                // Call the selectText function to focus and select text
+                selectText(element);
 
                 console.log('Text copied to clipboard.');
             } catch (err) {
