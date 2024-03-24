@@ -61,6 +61,6 @@
   border: 0.25rem solid var(--color-fg);
 }
 
-section {
-  padding-top: 5rem; 
+.section.content-editor {
+  margin: 2rem 0;
 }
