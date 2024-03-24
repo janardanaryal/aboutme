@@ -60,3 +60,7 @@
   background-color: var(--color-bg);
   border: 0.25rem solid var(--color-fg);
 }
+
+.section {
+  padding-top: 5rem; 
+}
