@@ -136,7 +136,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(document).ready(() => {
-
             $(window).scroll(function (e) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -144,15 +143,9 @@
             $('#submitSubmission').click(() => {
                 $('#submissionForm').submit();
             });
-
             $(document).on("click", function (event) {
                 $('#nav-middle .dropdown').removeClass('active');
             });
-        });
-    </script>
-    <script>
-        $(document).on("click", function (event) {
-            $('#nav-middle .dropdown').removeClass('active');
         });
     </script>
     <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/roman.js"></script>
