@@ -157,10 +157,9 @@
 
             input(value.trim().toLowerCase());
         }
-        $("#roman-unicode").keyup(function (e) {
-            convertToRoman(e);
+         $("#roman-unicode").on("input", function (e) {
+             convertToRoman(e);
         });
-
         $('#roman-convert').on('click', function (e) {
             e.preventDefault();
             convertToRoman(e);
