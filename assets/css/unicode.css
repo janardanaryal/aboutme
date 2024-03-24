@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#theme-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+#theme-button:focus {
+  outline: none;
+}
+
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.converter-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.special-cats-box {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.nav-link:focus {
+  outline: none;
+}
+
+.nav-link.active {
+  color: #fff;
+  background-color: #4caf50;
+}
+
+.textfield {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.buttton {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+.buttton:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-link {
+    margin-right: 10px;
+  }
+}
