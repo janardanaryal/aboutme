@@ -44,9 +44,10 @@
 }
 
 #theme {
-   position: relative;
-   margin-top: -45%;
-   margin-right: -20%;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 }
 
 #theme #theme-button {
