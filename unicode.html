@@ -141,10 +141,10 @@
              });
          });
       </script>
-      <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/roman.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/roman.js" defer></script>
       <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/preeti_to_unicode.js" defer></script>
       <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.0/assets/js/unicode_to_preeti.js" defer></script>
-      <script>
+      <script defer>
          function convertToRoman(e) {
              var value = $('#roman-unicode').val();
 
@@ -158,9 +158,9 @@
              convertToRoman(e);
          });
       </script>
-      <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.9/assets/js/copy-to-clipboard.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.9/assets/js/copy-to-clipboard.js" defer></script>
       <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.3/assets/js/toggle-dark-light.js" defer></script>
-      <script defer>
+      <script>
          let domReady = (cb) => {
              document.readyState === 'interactive' || document.readyState === 'complete'
                  ? cb()
