@@ -56,14 +56,14 @@
                             <form class="unicode-form" name="form">
                                 <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label>प्रीतिमा लेख्नुहोस: </label>
+                                        <label for="preetiTextArea">प्रीतिमा लेख्नुहोस: </label>
                                         <textarea id="preetiTextArea" name="TextToConvert"
                                             class="textfield form-control textarea" placeholder="यहाँ टाइप गर्नुहोस्"
                                             autocomplete="off" rows="6"
                                             onkeyup="javascript:unicodeConverter();"></textarea>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>युनिकोड</label>
+                                        <label for="unicodeTextArea">युनिकोड</label>
                                         <textarea id="unicodeTextArea" name="ConvertedText" autocomplete="off"
                                             class="textfield form-control textarea" rows="6"></textarea>
                                         <input type="button" class="buttton" id="copy-button-unicode" value="Copy-Text"
@@ -73,18 +73,17 @@
                             </form>
                         </div>
                         <div class="tab-pane fade" id="roman" role="tabpanel" aria-labelledby="roman-tab">
-
                             <form class="unicode-form">
                                 <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label>रोमन नेपालीमा लेख्नुहोसः उदाहरण 👉 mero =
+                                        <label for="roman-unicode">रोमन नेपालीमा लेख्नुहोसः उदाहरण 👉 mero =
                                             मेरो</label>
                                         <textarea id="roman-unicode" name="roman-type"
                                             class="textfield textarea form-control" placeholder="यहाँ टाइप गर्नुहोस्"
                                             rows="6" autocomplete="off"></textarea>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>नेपाली</label>
+                                        <label for="roman-output">नेपाली</label>
                                         <textarea id="roman-output" name="roman-type" autocomplete="off" readonly
                                             class="textfield textarea form-control" rows="6"></textarea>
                                         <input type="button" class="buttton" id="copy-button-roman" value="Copy-Text" style="margin-top: 1rem; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">
@@ -98,14 +97,14 @@
                             <form class="unicode-form" name="form">
                                 <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label>युनिकोडमा लेख्नुहोस</label>
+                                        <label for="unicodeTextArea2">युनिकोडमा लेख्नुहोस</label>
                                         <textarea id="unicodeTextArea2" name="unicode"
                                             class="textfield form-control textarea" placeholder="यहाँ टाइप गर्नुहोस्"
                                             rows="6" onkeyup="javascript:preetiConverter();"
                                             autocomplete="off"></textarea>
                                     </div>
                                     <div class="col-md-6">
-                                        <label>प्रीति</label>
+                                        <label for="preetiTextArea2">प्रीति</label>
                                         <textarea id="preetiTextArea2" name="ConvertedText"
                                             class="textfield textarea form-control" autocomplete="off"
                                             style="font-family: preeti;" rows="6"></textarea>
