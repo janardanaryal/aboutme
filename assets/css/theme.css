@@ -65,3 +65,21 @@
   margin: 2rem 0;
   padding-top: 60px; 
 }
+
+/* First choice: Named font */
+@font-face {
+    font-family: 'Preeti';
+    src: local('Preeti'),
+        url('https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.17/assets/fonts/preeti.TTF') format('truetype'),
+        url('https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.17/assets/fonts/preeti.woff2') format('woff2');
+}
+
+/* Second choice: Base64-encoded font */
+@font-face {
+    font-family: 'PreetiBase64';
+    src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAANkAA4AAAAABmgAAAMQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYGVgA0CIEOCWQKZIEACwoAATYCJAMOBCAFgx4HKgyCGRt6BciuC3gy+qTnMInwi4oVi6g4FSEGb7M/+sHz/2vpfW/+BAB3OQgTRJUCKSCQtYiyChA9s1rVypy5ODUcnvgXzdY1OOBjTaxQrcIpVryD8yYfUsgquR024NI1CdRvgP/xwrXXXIXTzZS4Cszq71Vzs6kbeoApjTkgtWo651saVvugiXCAmpUOkgl15IBRBvQ2gTddvhsCJAAAiiBYCCJXZTc26G3dCuzi5itPqBMLbmPPsmlETACPRgAYO6JAHRaQkRVIGTxiRGoe1wX/bUcA5J+u7h/QEclhoj6Rp3JI3/LCMrpNT8hctd3gdn/zWcbZWhqS+dAcjeZ0SczHYL12uUe4lVS783vkEa3UEGAeb5t5POeKFTIkk3jZYgofew2TMPEVopHnXJRPZrdtG0up2DAA53FwwD97EeVfNMvlKtwxZKHHc/3fSbvwSZODlM5/SOo8EgkI8W1yfnADDOXSBmdnMB3R/M55FIy8ar4zoxIAA0AMoHozFkLrHajj8SbeTjaddpKpijzy6U2/Abrzo00lUXal2KbC0uioCkElziJNGNwgNOfQ1d7VLtXt4+2ylZQw8v3amosCuxwBBGYtvX8zk9v/x3TWX4DjS2gH+B7a9Ikq0PsaAWJQAAQqOxRjqJqBIGStUBcgoyJFk/d6JYZuUGADfwAgibPEVoUgeIQoCkVNfo9FPKV6E++xKaAhGxW2zkJMLNDKGOQREtgqajroscjimN5AHhuH65koaOIwNjPYMya+IbAyHqC+qnFsTRxP+du3Iq0jJ3v6paoaz7T50T/Pl6GmQeporXFa65xL7aMZIqYhZsBnIiYCmMNOBg7S0jBl05hyR4bL8Kv1VNHIGAMxMRM5Hi0DNT4VFhUTIzI+KFFFDR6mlb+uh5kUoIYGVVrFkbqWh1paRGc9CkG5YFAws4pbdCdVVlZUZGfHxkJa2oDsuC6uDQOZS12CDMJcQmkgMAmksWTZ5EBAUWfTAAtHL5Y+DESEmElMYS4LWI6VrGMjWnToOcRRTnGGi1zjJnYcOG3XpgYWuQQAAA==') format('woff2');
+}
+
+textarea#preetiTextArea {
+    font-family: 'Preeti', PreetiBase64, sans-serif;
+}
