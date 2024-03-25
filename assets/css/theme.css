@@ -69,11 +69,9 @@
 /* First choice: Named font */
 @font-face {
     font-family: 'Preeti';
-    src: local('Preeti'),
-        url('https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.17/assets/fonts/preeti.TTF') format('truetype'),
-        url('https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.17/assets/fonts/preeti.woff2') format('woff2');
+    src: url('https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.1.1/assets/fonts/preeti.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.1.1/assets/fonts/preeti.TTF') format('truetype');
 }
-
 /* Second choice: Base64-encoded font */
 @font-face {
     font-family: 'PreetiBase64';
