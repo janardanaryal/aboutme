@@ -184,6 +184,18 @@
       <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.9/assets/js/copy-to-clipboard.js" defer></script>
       <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.3/assets/js/toggle-dark-light.js" defer></script>
       <script>
+         // Adjust the height of .special-chars container dynamically
+         function adjustContainerHeight() {
+             const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+             const containerHeight = viewportHeight * 0.1; // 10% of viewport height
+             document.querySelector('.special-chars').style.height = containerHeight + 'px';
+         }
+         
+         // Call the function initially and on window resize
+         adjustContainerHeight();
+         window.addEventListener('resize', adjustContainerHeight);
+      </script>
+      <script>
          let domReady = (cb) => {
              document.readyState === 'interactive' || document.readyState === 'complete'
                  ? cb()
