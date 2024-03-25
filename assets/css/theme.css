@@ -101,7 +101,8 @@ textarea#preetiTextArea2 {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    height: 1.5vh; /* Adjust as needed */
+    gap: 1.5vh;
+    /* Height will be adjusted dynamically using JavaScript */
 }
 
 
