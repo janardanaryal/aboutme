@@ -198,46 +198,47 @@
       <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.9/assets/js/copy-to-clipboard.js" defer></script>
       <script src="https://cdn.jsdelivr.net/gh/janardanaryal/aboutme@4.0.3/assets/js/toggle-dark-light.js" defer></script>
       <script>
-      // Select all special characters buttons
-      const specialCharsButtons = document.querySelectorAll('.special-characters');
-
-      // Loop through each button
-      specialCharsButtons.forEach((button) => {
-         button.addEventListener('click', () => {
-            // Get the button's text
-            const buttonText = button.textContent;
-
-            // Find the active tab
-            const activeTab = document.querySelector('.nav-tabs .nav-link.active');
-            let activeTabId = '';
-            if (activeTab) {
+         
+         // Select all special characters buttons
+         const specialCharsButtons = document.querySelectorAll('.special-characters');
+         
+         // Loop through each button
+         specialCharsButtons.forEach((button) => {
+           button.addEventListener('click', () => {
+             // Get the button's text
+             const buttonText = button.textContent;
+         
+             // Find the active tab
+             const activeTab = document.querySelector('.nav-tabs .nav-link.active');
+             let activeTabId = '';
+             if (activeTab) {
                activeTabId = activeTab.getAttribute('id');
-            }
-
-            // Get the active textarea based on the active tab
-            let activeTextarea = '';
-            if (activeTabId === 'preeti-tab') {
+             }
+         
+             // Get the active textarea based on the active tab
+             let activeTextarea = '';
+             if (activeTabId === 'preeti-tab') {
                activeTextarea = document.getElementById('preetiTextArea');
-            } else if (activeTabId === 'roman-tab') {
+             } else if (activeTabId === 'roman-tab') {
                activeTextarea = document.getElementById('roman-unicode');
-            } else if (activeTabId === 'unicode-tab') {
+             } else if (activeTabId === 'unicode-tab') {
                activeTextarea = document.getElementById('unicodeTextArea2');
-            }
-
-            // Insert the button's text into the active textarea
-            if (activeTextarea) {
+             }
+         
+             // Insert the button's text into the active textarea
+             if (activeTextarea) {
                const startPos = activeTextarea.selectionStart;
                const endPos = activeTextarea.selectionEnd;
                activeTextarea.value = activeTextarea.value.slice(0, startPos) + buttonText + activeTextarea.value.slice(endPos);
-
+         
                // Set the cursor position after the inserted text
                activeTextarea.selectionStart = startPos + buttonText.length;
                activeTextarea.selectionEnd = startPos + buttonText.length;
-
-               // Simulate a spacebar keypress action
-               textarea.focus();
-
-                       // Simulate a space keypress three times with setTimeout
+         
+               // Focus the active textarea
+               activeTextarea.focus();
+         
+               // Simulate a space keypress three times with setTimeout
                for (let i = 0; i < 3; i++) {
                  setTimeout(() => {
                    const spaceEvent = new KeyboardEvent('keydown', {
@@ -247,10 +248,13 @@
                      code: 'Space',
                      charCode: 32,
                    });
-                   textarea.dispatchEvent(spaceEvent);
-                 }, i * 100); // 100ms delay between each keypress simulation
+                   activeTextarea.dispatchEvent(spaceEvent);
+                 }, i * 10); // 10ms delay between each keypress simulation
                }
-             });
+             }
+           });
+         });
+
       </script>
       <script>
          // Adjust the height of .special-chars container dynamically
