@@ -237,7 +237,7 @@
                // Simulate a spacebar keypress action
                textarea.focus();
 
-               // Simulate a space keypress three times with setTimeout
+                       // Simulate a space keypress three times with setTimeout
                for (let i = 0; i < 3; i++) {
                  setTimeout(() => {
                    const spaceEvent = new KeyboardEvent('keydown', {
@@ -248,13 +248,10 @@
                      charCode: 32,
                    });
                    textarea.dispatchEvent(spaceEvent);
-                 }, i * 100); // 100ms delay between each keypress simulation
+                 }, i * 10); // 10ms delay between each keypress simulation
                }
              });
-            }
-         });
-      });
-   </script>
+      </script>
       <script>
          // Adjust the height of .special-chars container dynamically
          function adjustContainerHeight() {
