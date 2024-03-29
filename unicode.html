@@ -235,14 +235,22 @@
                activeTextarea.selectionEnd = startPos + buttonText.length;
 
                // Simulate a spacebar keypress action
-               const spaceEvent = new KeyboardEvent('keydown', {
-                  bubbles: true,
-                  cancelable: true,
-                  key: ' ',
-                  code: 'Space',
-                  charCode: 32,
-               });
-               activeTextarea.dispatchEvent(spaceEvent);
+               textarea.focus();
+
+               // Simulate a space keypress three times with setTimeout
+               for (let i = 0; i < 3; i++) {
+                 setTimeout(() => {
+                   const spaceEvent = new KeyboardEvent('keydown', {
+                     bubbles: true,
+                     cancelable: true,
+                     key: ' ',
+                     code: 'Space',
+                     charCode: 32,
+                   });
+                   textarea.dispatchEvent(spaceEvent);
+                 }, i * 100); // 100ms delay between each keypress simulation
+               }
+             });
             }
          });
       });
